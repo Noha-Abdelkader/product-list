@@ -46,21 +46,21 @@ export default function details({
 
             <h2 className="font-semibold text-xl my-3">{product.title}</h2>
             <p className="text-gray-600 text-sm mb-5">{product.description}</p>
-              <div className="flex items-center justify-between">
-                <div className="text-yellow-600 flex items-center gap-1">
-                  {Array.from(
-                    { length: product.rating.rate.toFixed() },
-                    (_, index) => (
-                      <span key={index}>
-                        <FaStar />
-                      </span>
-                    )
-                  )}
-                </div>
-                <p className="text-rose-800 font-semibold text-xl">
-                  {" "}
-                  $ {product.price}
-                </p>
+            <div className="flex items-center justify-between">
+              <div className="text-yellow-600 flex items-center gap-1">
+                {Array.from(
+                  { length: product.rating.rate.toFixed() },
+                  (_, index) => (
+                    <span key={index}>
+                      <FaStar />
+                    </span>
+                  )
+                )}
+              </div>
+              <p className="text-rose-800 font-semibold text-xl">
+                {" "}
+                $ {product.price}
+              </p>
             </div>
           </div>
         </div>
